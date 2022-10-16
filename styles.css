@@ -6,22 +6,31 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none}
 
-  *,
-  *:before,
-  *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit}
 
+    
 /* VARIABLES */
 
 :root {
 /* main color */
---main-color: hsla(32, 80%, 50%, 100%);
---font-color:hsla(0, 0%, 96%, 100%);
+--main-color: SteelBlue;
+--font-color:WhiteSmoke;
 --icon-color: hsla(32, 0%, 50%, 100%);
---icon-hovercolor: hsla(32, 80%, 50%, 100%);
+--icon-hovercolor: SteelBlue;
 --footer-textcolor:hsla(32, 0%, 17%, 100%);
 --footer-bckgrndcolor:hsla(30, 29%, 5%, 100%);
---background-color:hsla(32, 0%, 13%, 100%);}
+--background-color:hsla(32, 0%, 13%, 100%);
+/* SLA variations */
+--try_this_color: 32;
+/* custom color 1 */
+    --try_h_1: 30;
+    --try_s_1: 100%;
+    --try_l_1: 50%;
+    --try_a_1: 100%;}
+
 
 /* LAYOUT AND TEXT SETTINGS */
 
@@ -54,7 +63,7 @@ h3 {
     color: var(--font-color)}
 h4 {
     font-size: 1.6rem;  
-    line-height: 0.8rem;
+    line-height: 1.4rem;
     color: var(--font-color)}
 h5 {
     font-size: 1rem;  
@@ -78,18 +87,8 @@ a:hover,
 a:focus {
     color:var(--icon-hovercolor)}
 
-
-
-.selected-text {
-    font-size: 0.8rem;
-    font-weight: 900}
-
 .intro-text {
     margin-top: 8rem}
-
-.chapter {
-    margin-top: 3rem;
-    border-top: var(--footer-bckgrndcolor) 2px solid}
 
 .intro-text2 {
     width:40%;
@@ -97,51 +96,15 @@ a:focus {
     margin-bottom:3rem;
     text-align: center}
 
-.about-txt h6 {
+.chapter {
+    margin-top: 3rem;
+    border-top: var(--footer-bckgrndcolor) 2px solid}
+
+.about-txt {
     width:40%;
     margin: auto;
     margin-bottom:3rem;
     text-align: left}
-
-.textblock {
-    display: inline-flex;
-    }
-
-.textblock2 {
-    display: inline-flex;
-    }    
-
-.understanding-text h6 { 
-        width:100%;       
-        margin: auto;
-        margin-bottom:3rem;
-        text-align: left}
-
-label {
-    color: var(--font-color);
-}
-
-.block {
-    top:0;
-    width:40%;
-    margin: auto;
-    margin-top:0;
-}
-
-.block3 {
-    width:30%;
-    margin: auto;
-    margin-top: 0;
-}
-
-.block4 {
-    width:100%;
-    margin: auto;
-}
-
-#hue-swatches {
-    margin-top: 3rem;
-    border-top:var(--footer-bckgrndcolor) 2px solid}
 
 .color-wheel {
     display: grid;
@@ -149,16 +112,15 @@ label {
     margin: auto;
     grid-template: repeat(24, 1fr) / repeat(6, 1fr);
     grid-gap: 5px}
-
+    
 .color-w {
     width: 100%;
     height: 9rem}
-
+    
 .color-w p {
     margin: auto;
     padding: 10%}
- 
-
+       
 .color-18 p, .color-17 p, .color-15 p,
 .color-89 p, .color-90 p, .color-16 p,
 .color-91 p, .color-92 p, .color-103 p,
@@ -169,36 +131,146 @@ label {
 .color-69 p, .color-88 p {
     color:var(--font-color)}
 
+.selected-text {
+    font-size: 0.8rem;
+    font-weight: 900}
 
+.understanding-text h6 { 
+    width:100%;       
+    margin: auto;
+    margin-bottom:3rem;
+    text-align: left}
 
+.textblock {
+    display: inline-flex}
+
+.block {
+    top:0;
+    width:40%;
+    margin: auto;
+    margin-top:0}
+
+.textblock2 {
+    display: inline-flex}
+    
+.block3 {
+    width:30%;
+    margin: auto;
+    margin-top: 0}
+
+.block4 {
+    width:100%;
+    margin: auto}
 
 
 /* COLOR TESTER */
 
-.playable-code {
-    background-color: #f4f7f8;
-    border: none;
-    border-left: 6px solid #558abb;
-    border-width: medium medium medium 6px;
-    color: #4d4e53;
-    height: 100px;
-    width: 90%;
-    padding: 10px 10px 0}
-  
 #colortester-sample {
     width: 100%;
     height: 200px;
     margin-bottom: 2rem;
     border: 2px solid var(--footer-bckgrndcolor);
-    background-color: #343434;}
+    background-color: var(--font-color);
+}
+ 
+label {
+    color: var(--font-color);
+}
 
 #input-color {
-    margin-bottom: 2rem}
+    margin-bottom: 2rem;
+}
 
 
+/* CUSTOM COLOR TESTER */
+
+.colores {
+    width: 100%;
+    margin: auto;
+}
+
+.custom {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+.custom-color {
+    width: 100%;
+}
+
+.custom-colorito {
+    width: 60%;
+    height: 9rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: 2px solid var(--footer-bckgrndcolor);
+}
 
 
+/* CUSTOM PALETTE INPUT FORM  */
 
+#hex-form {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    color: var(--font-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+#red1-number, #green1-number, #blue1-number, #alph1-number {
+    width: 30%;
+    color: whitesmoke;
+    background-color: var(--footer-textcolor);
+    margin: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+#red1, #green1, #blue1, #alph1 {
+    width: 45%;
+    cursor: pointer;
+}
+
+
+/* FOOTER contact data */
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--footer-bckgrndcolor);
+}
+
+.text-footer {
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--footer-textcolor);
+}
+#contact {
+    width: 100%;
+    margin: auto;
+    padding-top: 0.2rem;
+    text-align: center;
+}
+
+.contactFlex {
+    margin-top: -1rem;
+    display: flex;
+    width: 100%;
+}
+.contactIcons {
+
+    display: inline-flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 20%;
+    font-size: 1.52rem;
+  }
 
 
 /* COLOR SWATCHES */
@@ -252,7 +324,6 @@ label {
 .color-45 {background-color: Gold}
 .color-46 {background-color: Goldenrod}
 .color-47 {background-color: DarkGoldenrod}
-
 /* GREEN */
 .color-48 {background-color: Olive}
 .color-49 {background-color: DarkOliveGreen}
@@ -277,7 +348,6 @@ label {
 .color-68 {background-color: LightSeaGreen}
 .color-69 {background-color: DarkCyan}
 .color-70 {background-color: Teal}
-
 /* BLUE */
 .color-71 {background-color: Cyan}
 .color-72 {background-color: LightCyan}
@@ -303,7 +373,6 @@ label {
 .color-92 {background-color: Navy}
 .color-93 {background-color: MidnightBlue}
 .color-94 {background-color: MediumSlateBlue}
-
 /* PURPLE */
 .color-95 {background-color: SlateBlue}
 .color-96 {background-color: DarkSlateBlue}
@@ -322,7 +391,6 @@ label {
 .color-109 {background-color: Plum}
 .color-110 {background-color: Thistle}
 .color-111 {background-color: Lavender}
-
 /* WHITE */
 .color-112 {background-color: MistyRose}
 .color-113 {background-color: LavenderBlush}
@@ -341,7 +409,6 @@ label {
 .color-126 {background-color: HoneyDew}
 .color-127 {background-color: Snow}
 .color-128 {background-color: White}
-
 /* GRIS */
 .color-129 {background-color: Gainsboro}
 .color-130 {background-color: LightGray}
@@ -354,32 +421,23 @@ label {
 .color-137 {background-color: DarkSlateGray}
 .color-138 {background-color: Black}
 
-
-
-
-
-
-
-
 /* FOOTER */
+
 footer {
     margin-top: 3rem;
-    background-color: var(--footer-bckgrndcolor);
-}
+    background-color: var(--footer-bckgrndcolor)}
 
 .text-footer {
     margin: auto;
     padding: 1rem 0 1rem 0;
     font-size: 0.7rem;
     text-align: center;
-    color: var(--footer-textcolor);
-}
+    color: var(--footer-textcolor)}
 #contact {
     width: 100%;
     margin: auto;
     padding-top: 0.2rem;
-    text-align: center;
-}
+    text-align: center}
 
 .contactFlex {
     margin-top: -1rem;
@@ -391,11 +449,7 @@ footer {
     justify-content: space-around;
     margin: auto;
     width: 20%;
-    font-size: 1.52rem;
-  }
-
-
-
+    font-size: 1.52rem  }
 
 /* MEDIA QUERIES */
 

@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex Color List</title>
+
+    <title>Hex Color tool</title>
+    
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css">
-
-    <script src="https://kit.fontawesome.com/b9e15d49f6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>    
 <div class="intro-text">
-    <h1>Hex Color List</h1>
-    <h4>- complete with W3C color names and RGB values -</h4>
+    <h1>Hex Colors</h1>
+    <h4>- complete with W3C colour names and RGB values -</h4>
     <h2>A visual guide of RGB and Hexadecimal colors</h2>
 
     <div class="intro-text2">
@@ -23,16 +23,18 @@
     </div>
 </div>
 
+
 <!-- COLOR SWATCHES --> 
-<div id="hue-swatches" class="chapter">
+
+<div class="chapter">
     <h3>W3C color names, hex and RGB values</h3>
 
-    <div class="about-txt">
-    <h6>W3C color names are names assigned by the W3C to specify colors in web pages or files. These names can be used instead of their corresponding hexadecimal value to refer to that color in an HTML file or CSS stylesheet. These names are supported by all modern web browsers and used because it's easier to remember color names than color codes.</h6>
-    </div>
+    <h6 class="about-txt">W3C color names are names assigned by the W3C to specify colors in web pages or files. These names can be used instead of their corresponding hexadecimal value to refer to that color in an HTML file or CSS stylesheet. These names are supported by all modern web browsers and used because it's easier to remember color names than color codes.</h6>
 
-<!-- COLOR WHEEL -->    
+
+<!-- COLOR SAMPLES -->    
     <div class="color-wheel">
+
 <!-- PINK RED ORANGE BROWN YELLOW --> 
         <div class="color-w color-00">
             <p><span class="selected-text">RosyBrown</span><br>#BC8F8F<br>rgb(188, 143, 143)</p></div>
@@ -321,33 +323,12 @@
 </div>
 
 
-
-<!-- COLOR TESTER -->
-
-<div id="color-tester" class="chapter">
-    <h3>Try it yourself</h3>
-
-    <div class="colortester-text">
-    <h5>Experiment with different values, try the colors from the table above<br>or come up with your own combination</h5>
-    </div>
-    <div>
-        <label for="input-color">Enter a hex color value:</label>
-        <input type="text" id="input-color">
-    </div>
-    <div id="colortester-sample"></div>
-
-
-</div>
-
-
-
 <!-- RGB VS HEX - understanding the values -->
 
-<div id="Understanding" class="chapter">
-    <h3>RGB or HEX? - understanding the values</h3>
+<div class="chapter">
+    <h3>RGB or HEX</h3>
 
     <div class="understanding-text">
-
         <div class="textblock">   
             <div class="block">
             <h5> RGB Color Codes</h5>
@@ -395,15 +376,15 @@
         
         <div class="block3">
             <h5>Create lighter colors</h5>
-            <h6>If you want to stick to the same shade of a color you have, this makes adjusting the brightness simple:
+            <h6>If you would like the make the color lighter, while keeping the same shade of the color you have: adjust the values that are not being used, so for example, adjust green and blue if your color is red, or adjust only red if your color is cyan. The values will need to be higher numbers in order to lighten the color.
             <br><br>
-            If you would like to make the color lighter, adjust the values that are not being used, so for example, adjust green and blue if your color is red, or adjust only red if your color is cyan. The values will need to be higher numbers in order to lighten the color.
+            Note: If you are changing two values, the values will need to be adjusted evenly in order to make sure you keepthe same color tone. That means if you increase or decrease one of the values by 100, you will need to also increase or decrease the other value by 100, regardless of if these numbers had the same starting value.
             </h6>
         </div>
         
         <div class="block3">
             <h5>Create darker colors</h5>   
-            <h6>If you would like the make the color darker, adjust only the values that are being used, so for example, adjust only red if your color is red, or adjust green and blue if your color is cyan. The values will need to be lower numbers in order to darken the color.
+            <h6>If you would like the make the color darker, while keeping the same shade of the color you have: adjust only the values that are being used, so for example, adjust only red if your color is red, or adjust green and blue if your color is cyan. The values will need to be lower numbers in order to darken the color.
             <br><br>
             Note: If you are changing two values, the values will need to be adjusted evenly in order to make sure you keepthe same color tone. That means if you increase or decrease one of the values by 100, you will need to also increase or decrease the other value by 100, regardless of if these numbers had the same starting value.
             </h6>
@@ -414,15 +395,83 @@
     <div class="block4">
         <h6>If you would like to learn how to convert from Hex to RGB and viceversa, check out<a href="https://www.developintelligence.com/blog/2017/02/rgb-to-hex-understanding-the-major-web-color-codes/"> this site.</a>
         <br><br>
-        Other interesting page about the subject are: <a href="https://htmlcolorcodes.com/">this,</a> or <a href="https://www.mathsisfun.com/hexadecimal-decimal-colors.html">this one,</a>, from where I've gathered a lot of this information. 
+        Other interesting pages about the subject are: <a href="https://htmlcolorcodes.com/">this,</a> or <a href="https://www.mathsisfun.com/hexadecimal-decimal-colors.html">this one</a>, from where I've gathered a lot of this information. 
         </h6>
+    </div>
+</div>
+
+
+<!-- COLOR TESTER -->
+
+<div class="chapter">
+
+    <h3>COLOR TESTER</h3>
+    
+    <h5>Experiment with different values, try the colors from the table above<br>or come up with your own combination</h5>
+
+    <div id="colortester-sample"></div>
+    <div>
+        <label for="input-color">Enter a hex or a rgb(r,b,g) color value:</label>
+        <input type="text" id="input-color">
     </div>
 
 </div>
 
 
+<!-- CUSTOM COLOR TESTER --> 
+<!-- 
+<div id="custom-palette"  class="chapter">
+    <div class="colores">
+
+        <h3>CUSTOM COLOR PALETTE</h3>
+        
+        <div class="colorgroup">
+
+            <form id="hex-form">
+                <div class="custom">
 
 
+                    <div class="custom-color">
+
+                        <div class="custom-colorito color-cust1"></div>
+                        
+<div class="custom-controls">
+                        <div class="red-1">
+                            <label for="red1" class="text-form">R</label>
+                            <input id="red" name="red-slider" autocomplete="off" type="range" min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                            <input id="red1-number" class="input-number" autocomplete="off" type="number" name="red1-number"  min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+                        
+                        <div class="green-1">
+                            <label for="green1" class="text-form">G</label>
+                            <input id="green1" name="green1" autocomplete="off" type="range" min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                            <input id="green1-number" name="green1-number" autocomplete="off" type="number" min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="blue-1">
+                            <label for="blue1" class="text-form">B</label>
+                            <input id="blue1" name="blue1" autocomplete="off" type="range" min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                            <input id="blue1-number" name="blue1-number" autocomplete="off" type="number" min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="alph-1">
+                            <label for="alph1" class="text-form">A</label>
+                            <input id="alph1" name="alph1" autocomplete="off" type="range" min="0" max="250" value="250" oninput="this.nextElementSibling.value = this.value">
+                            <input id="alph1-number" name="alph1-number" autocomplete="off" type="number" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+</div>
+                    </div>
+
+
+<h2>aqui controles para otros colores</h2>
+           
+
+
+                </div>
+            </form>   
+        </div>
+    </div>
+</div> -->
 
 
 <!-- FOOTERT -->
@@ -438,41 +487,13 @@
             </div>
         </div>
     </section>
-    <p class="text-footer">Hex color list 1.0</p>
+    <p class="text-footer">Hex color tool 1.1</p>
 </footer>
-
-
-<!-- SCRIPT FOR COLOR TESTER -->
-<script>
-    const inputElem = document.querySelector('#input-color');
-    const divElem = document.querySelector('#colortester-sample');
-    
-    function validTextColor(stringToTest) {
-      if (stringToTest === "") { return false; }
-      if (stringToTest === "inherit") { return false; }
-      if (stringToTest === "transparent") { return false; }
-    
-      const image = document.createElement("img");
-      image.style.color = "rgb(0, 0, 0)";
-      image.style.color = stringToTest;
-      if (image.style.color !== "rgb(0, 0, 0)") { return true; }
-      image.style.color = "rgb(255, 255, 255)";
-      image.style.color = stringToTest;
-      return image.style.color !== "rgb(255, 255, 255)";
-    }
-    
-    inputElem.addEventListener('change', () => {
-      if(validTextColor(inputElem.value)) {
-        divElem.style.backgroundColor = inputElem.value;
-        divElem.textContent = '';
-      } else {
-        divElem.style.backgroundColor = 'white';
-        divElem.textContent = 'Invalid color value';
-      }
-    });
-</script>
 
 </body>
 
+<script type="text/javascript" src="./script.js"></script>
+
+<script src="https://kit.fontawesome.com/b9e15d49f6.js" crossorigin="anonymous"></script>
 
 </html>
