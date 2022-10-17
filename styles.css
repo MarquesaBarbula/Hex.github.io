@@ -25,13 +25,12 @@ html {
 --footer-textcolor:hsla(32, 0%, 17%, 100%);
 --footer-bckgrndcolor:hsla(30, 29%, 5%, 100%);
 --background-color:hsla(32, 0%, 13%, 100%);
-/* SLA variations */
---try_this_color: 32;
+
 /* custom color 1 */
-    --try_h_1: 30;
-    --try_s_1: 100%;
-    --try_l_1: 50%;
-    --try_a_1: 100%;
+--try_h_1: 30;
+--try_s_1: 100%;
+--try_l_1: 50%;
+--try_a_1: 100%;
 }
 
 
@@ -105,11 +104,15 @@ a:focus {
     margin-top: 8rem;
 }
 
+.intro-text2 h5 {
+    font-weight: 400;
+    text-align: center;
+}
+
 .intro-text2 {
     width:60%;
     margin: auto;
     margin-bottom:3rem;
-    text-align: left;
 }
 
 .chapter {
@@ -150,7 +153,8 @@ a:focus {
 .color-49 p, .color-59 p, .color-58 p,
 .color-57 p, .color-60 p, .color-70 p,
 .color-69 p, .color-88 p {
-    color:var(--font-color)}
+    color:var(--font-color);
+}
 
 .selected-text {
     font-size: 0.95rem;
@@ -186,7 +190,7 @@ a:focus {
 }
 
 .block4 {
-    width:100%;
+    width:80%;
     margin: auto;
 }
 
@@ -194,8 +198,9 @@ a:focus {
 /* COLOR TESTER */
 
 #colortester-sample {
-    width: 100%;
+    width: 68%;
     height: 200px;
+    margin: auto;
     margin-bottom: 2rem;
     border: 2px solid var(--footer-bckgrndcolor);
     background-color: var(--font-color);
@@ -210,9 +215,9 @@ label {
 }
 
 
-/* CUSTOM COLOR TESTER */
+/* CUSTOM COLOR TESTER PALETTE */
 
-.colores {
+/* .colores {
     width: 100%;
     margin: auto;
 }
@@ -227,16 +232,24 @@ label {
 }
 
 .custom-colorito {
-    width: 60%;
+    width: 68%;
     height: 9rem;
     margin: auto;
     margin-bottom: 2rem;
     border: 2px solid var(--footer-bckgrndcolor);
 }
 
+.custom-controls {
+    margin-bottom: 3rem;
+}
 
-/* CUSTOM PALETTE INPUT FORM  */
+.color-cust1 {
+    background-color: hsla(var(--try_h_1), var(--try_s_1), var(--try_l_1), var(--try_a_1));
+} */
 
+
+/* CUSTOM COLOR TESTER PALETTE INPUT FORM  */
+/* 
 #hex-form {
     display: block;
     width: 100%;
@@ -249,20 +262,21 @@ label {
     cursor: pointer;
 }
 
-#red1-number, #green1-number, #blue1-number, #alph1-number {
-    width: 30%;
+#hue1 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#hue1-number {
+    width: 20%;
     color: whitesmoke;
     background-color: var(--footer-textcolor);
     margin: none;
     border: none;
     text-align: center;
     cursor: pointer;
-}
+} */
 
-#red1, #green1, #blue1, #alph1 {
-    width: 45%;
-    cursor: pointer;
-}
 
 
 /* FOOTER contact data */
@@ -292,6 +306,7 @@ footer {
     display: flex;
     width: 100%;
 }
+
 .contactIcons {
     display: inline-flex;
     justify-content: space-around;
@@ -299,6 +314,61 @@ footer {
     width: 20%;
     font-size: 1.52rem;
   }
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1050px) {
+
+    body {
+        width: 98%;
+    }
+
+    .intro-text2,
+    .about-txt {
+     width: 80%;
+    }
+
+    .color-wheel {
+        grid-template: repeat(24, 1fr) / repeat(4, 1fr);
+    } 
+
+    .contactIcons {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 681px) {
+
+    body {
+        width: 98%;
+    }
+
+    .intro-text2,
+    .about-txt {
+        width: 80%;
+    }
+
+    .textblock,
+    .textblock2 {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .block,
+    .block3,
+    .block4 {
+        margin: auto;
+        width: 100%;
+    }
+
+    .color-wheel {
+        grid-template: repeat(38, 1fr) / repeat(2, 1fr);
+    }
+}
+
 
 
 /* COLOR SWATCHES */
@@ -448,89 +518,3 @@ footer {
 .color-136 {background-color: SlateGray;}
 .color-137 {background-color: DarkSlateGray;}
 .color-138 {background-color: Black;}
-
-/* FOOTER */
-
-footer {
-    margin-top: 3rem;
-    background-color: var(--footer-bckgrndcolor);
-}
-
-.text-footer {
-    margin: auto;
-    padding: 1rem 0 1rem 0;
-    font-size: 0.7rem;
-    text-align: center;
-    color: var(--footer-textcolor);
-}
-
-#contact {
-    width: 100%;
-    margin: auto;
-    padding-top: 0.2rem;
-    text-align: center;
-}
-
-.contactFlex {
-    margin-top: -1rem;
-    display: flex;
-    width: 100%;
-}
-
-.contactIcons {
-    display: inline-flex;
-    justify-content: space-around;
-    margin: auto;
-    width: 20%;
-    font-size: 1.52rem;
-}
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 1050px) {
-
-    body {
-        width: 98%;
-    }
-
-    .intro-text2,
-    .about-txt {
-     width: 80%;
-    }
-
-    .color-wheel {
-        grid-template: repeat(24, 1fr) / repeat(4, 1fr);
-    } 
-
-    .contactIcons {
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 681px) {
-
-    body {
-        width: 98%;
-    }
-
-    .intro-text2,
-    .about-txt {
-        width: 80%;
-    }
-
-    .textblock,
-    .textblock2 {
-        display: block;
-        width: 80%;
-    }
-
-    .block,
-    .block3,
-    .block4 {
-        width: 80%;
-    }
-
-    .color-wheel {
-        grid-template: repeat(38, 1fr) / repeat(2, 1fr);
-    }
-}
