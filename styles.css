@@ -4,12 +4,14 @@ html {
     box-sizing: border-box;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    text-size-adjust: none}
+    text-size-adjust: none;
+}
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit}
+    box-sizing: inherit;
+}
 
     
 /* VARIABLES */
@@ -29,7 +31,8 @@ html {
     --try_h_1: 30;
     --try_s_1: 100%;
     --try_l_1: 50%;
-    --try_a_1: 100%;}
+    --try_a_1: 100%;
+}
 
 
 /* LAYOUT AND TEXT SETTINGS */
@@ -37,7 +40,8 @@ html {
 html {
     box-sizing: border-box;
     margin: 0;
-    padding: 0}
+    padding: 0;
+}
 body {
     width: 90%;
     max-width: 1200px;
@@ -45,12 +49,14 @@ body {
     margin: auto;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: var(--background-color)}
+    background-color: var(--background-color);
+}
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     line-height: 2rem;
-    color: var(--font-color)}
+    color: var(--font-color);
+}
 h2 {
     font-size: 2rem;  
     line-height: 2rem;
@@ -60,66 +66,81 @@ h3 {
     margin-bottom: 3rem;
     font-size: 1.6rem;  
     line-height: 0.8rem;
-    color: var(--font-color)}
+    color: var(--font-color);
+}
 h4 {
     font-size: 1.6rem;  
     line-height: 1.4rem;
-    color: var(--font-color)}
+    color: var(--font-color);
+}
 h5 {
     font-size: 1rem;  
     line-height: 1.3rem;
-    color: var(--font-color)}
+    color: var(--font-color);
+}
 h6 {
     font-weight: 400;
     font-size: 0.8rem;
-    color:var(--icon-color)}
+    line-height: 1.2rem;
+    color:var(--icon-color);
+}
 p {
     font-weight: 400;
     font-size: 0.8rem;
     line-height: 1rem;
     text-align: left;
-    color:var(--footer-bckgrndcolor)}
+    color:var(--footer-bckgrndcolor);
+}
 a {
     color:var(--icon-color);
-    transition: color 0.5s}
+    transition: color 0.5s;
+}
 
 a:hover,
 a:focus {
-    color:var(--icon-hovercolor)}
+    color:var(--icon-hovercolor);
+}
 
 .intro-text {
-    margin-top: 8rem}
+    margin-top: 8rem;
+}
 
 .intro-text2 {
-    width:40%;
+    width:60%;
     margin: auto;
     margin-bottom:3rem;
-    text-align: center}
+    text-align: left;
+}
 
 .chapter {
     margin-top: 3rem;
-    border-top: var(--footer-bckgrndcolor) 2px solid}
+    border-top: var(--footer-bckgrndcolor) 2px solid;
+}
 
 .about-txt {
-    width:40%;
+    width:60%;
     margin: auto;
     margin-bottom:3rem;
-    text-align: left}
+    text-align: left;
+}
 
 .color-wheel {
     display: grid;
     width: 100%;
     margin: auto;
     grid-template: repeat(24, 1fr) / repeat(6, 1fr);
-    grid-gap: 5px}
+    grid-gap: 5px;
+}
     
 .color-w {
     width: 100%;
-    height: 9rem}
+    height: 9rem;
+}
     
 .color-w p {
     margin: auto;
-    padding: 10%}
+    padding: 10%;
+}
        
 .color-18 p, .color-17 p, .color-15 p,
 .color-89 p, .color-90 p, .color-16 p,
@@ -132,35 +153,42 @@ a:focus {
     color:var(--font-color)}
 
 .selected-text {
-    font-size: 0.8rem;
-    font-weight: 900}
+    font-size: 0.95rem;
+    font-weight: 900;
+}
 
 .understanding-text h6 { 
     width:100%;       
     margin: auto;
     margin-bottom:3rem;
-    text-align: left}
+    text-align: left;
+}
 
 .textblock {
-    display: inline-flex}
+    display: inline-flex;
+}
 
 .block {
     top:0;
-    width:40%;
+    width:45.5%;
     margin: auto;
-    margin-top:0}
+    margin-top:0;
+}
 
 .textblock2 {
-    display: inline-flex}
+    display: inline-flex;
+}
     
 .block3 {
     width:30%;
     margin: auto;
-    margin-top: 0}
+    margin-top: 0;
+}
 
 .block4 {
     width:100%;
-    margin: auto}
+    margin: auto;
+}
 
 
 /* COLOR TESTER */
@@ -251,6 +279,7 @@ footer {
     text-align: center;
     color: var(--footer-textcolor);
 }
+
 #contact {
     width: 100%;
     margin: auto;
@@ -264,7 +293,6 @@ footer {
     width: 100%;
 }
 .contactIcons {
-
     display: inline-flex;
     justify-content: space-around;
     margin: auto;
@@ -276,205 +304,233 @@ footer {
 /* COLOR SWATCHES */
 
 /* PINK RED ORANGE BROWN YELLOW */
-.color-00 {background-color: RosyBrown}
-.color-01 {background-color: Pink}
-.color-02 {background-color: LightPink}
-.color-03 {background-color: HotPink}
-.color-04 {background-color: MediumVioletRed}
-.color-05 {background-color: DeepPink}
-.color-06 {background-color: PaleVioletRed}
-.color-07 {background-color: IndianRed}
-.color-08 {background-color: Salmon}
-.color-09 {background-color: DarkSalmon}
-.color-10 {background-color: LightSalmon}
-.color-11 {background-color: LightCoral}
-.color-12 {background-color: Coral}
-.color-13 {background-color: Tomato}
-.color-14 {background-color: Crimson}
-.color-15 {background-color: FireBrick}
-.color-16 {background-color: Brown}
-.color-17 {background-color: Maroon}
-.color-18 {background-color: DarkRed}
-.color-19 {background-color: Red}
-.color-20 {background-color: OrangeRed}
-.color-21 {background-color: DarkOrange}
-.color-22 {background-color: Orange}
-.color-23 {background-color: Chocolate}
-.color-24 {background-color: Sienna}
-.color-25 {background-color: SaddleBrown}
-.color-26 {background-color: Peru}
-.color-27 {background-color: SandyBrown}
-.color-28 {background-color: BurlyWood}
-.color-29 {background-color: Tan}
-.color-30 {background-color: Wheat}
-.color-31 {background-color: Moccasin}
-.color-32 {background-color: NavajoWhite}
-.color-33 {background-color: PeachPuff}
-.color-34 {background-color: Bisque}
-.color-35 {background-color: BlanchedAlmond}
-.color-36 {background-color: PapayaWhip}
-.color-37 {background-color: Cornsilk}
-.color-38 {background-color: LightYellow}
-.color-39 {background-color: LightGoldenrodYellow}
-.color-40 {background-color: LemonChiffon}
-.color-41 {background-color: PaleGoldenrod}
-.color-42 {background-color: DarkKhaki}
-.color-43 {background-color: Khaki}
-.color-44 {background-color: Yellow}
-.color-45 {background-color: Gold}
-.color-46 {background-color: Goldenrod}
-.color-47 {background-color: DarkGoldenrod}
+.color-00 {background-color: RosyBrown;}
+.color-01 {background-color: Pink;}
+.color-02 {background-color: LightPink;}
+.color-03 {background-color: HotPink;}
+.color-04 {background-color: MediumVioletRed;}
+.color-05 {background-color: DeepPink;}
+.color-06 {background-color: PaleVioletRed;}
+.color-07 {background-color: IndianRed;}
+.color-08 {background-color: Salmon;}
+.color-09 {background-color: DarkSalmon;}
+.color-10 {background-color: LightSalmon;}
+.color-11 {background-color: LightCoral;}
+.color-12 {background-color: Coral;}
+.color-13 {background-color: Tomato;}
+.color-14 {background-color: Crimson;}
+.color-15 {background-color: FireBrick;}
+.color-16 {background-color: Brown;}
+.color-17 {background-color: Maroon;}
+.color-18 {background-color: DarkRed;}
+.color-19 {background-color: Red;}
+.color-20 {background-color: OrangeRed;}
+.color-21 {background-color: DarkOrange;}
+.color-22 {background-color: Orange;}
+.color-23 {background-color: Chocolate;}
+.color-24 {background-color: Sienna;}
+.color-25 {background-color: SaddleBrown;}
+.color-26 {background-color: Peru;}
+.color-27 {background-color: SandyBrown;}
+.color-28 {background-color: BurlyWood;}
+.color-29 {background-color: Tan;}
+.color-30 {background-color: Wheat;}
+.color-31 {background-color: Moccasin;}
+.color-32 {background-color: NavajoWhite;}
+.color-33 {background-color: PeachPuff;}
+.color-34 {background-color: Bisque;}
+.color-35 {background-color: BlanchedAlmond;}
+.color-36 {background-color: PapayaWhip;}
+.color-37 {background-color: Cornsilk;}
+.color-38 {background-color: LightYellow;}
+.color-39 {background-color: LightGoldenrodYellow;}
+.color-40 {background-color: LemonChiffon;}
+.color-41 {background-color: PaleGoldenrod;}
+.color-42 {background-color: DarkKhaki;}
+.color-43 {background-color: Khaki;}
+.color-44 {background-color: Yellow;}
+.color-45 {background-color: Gold;}
+.color-46 {background-color: Goldenrod;}
+.color-47 {background-color: DarkGoldenrod;}
 /* GREEN */
-.color-48 {background-color: Olive}
-.color-49 {background-color: DarkOliveGreen}
-.color-50 {background-color: OliveDrab}
-.color-51 {background-color: YellowGreen}
-.color-52 {background-color: GreenYellow}
-.color-53 {background-color: Chartreuse}
-.color-54 {background-color: LawnGreen}
-.color-55 {background-color: Lime}
-.color-56 {background-color: LimeGreen}
-.color-57 {background-color: ForestGreen}
-.color-58 {background-color: Green}
-.color-59 {background-color: DarkGreen}
-.color-60 {background-color: SeaGreen}
-.color-61 {background-color: MediumSeaGreen}
-.color-62 {background-color: SpringGreen}
-.color-63 {background-color: MediumSpringGreen}
-.color-64 {background-color: LightGreen}
-.color-65 {background-color: PaleGreen}
-.color-66 {background-color: DarkSeaGreen}
-.color-67 {background-color: MediumAquamarine}
-.color-68 {background-color: LightSeaGreen}
-.color-69 {background-color: DarkCyan}
-.color-70 {background-color: Teal}
+.color-48 {background-color: Olive;}
+.color-49 {background-color: DarkOliveGreen;}
+.color-50 {background-color: OliveDrab;}
+.color-51 {background-color: YellowGreen;}
+.color-52 {background-color: GreenYellow;}
+.color-53 {background-color: Chartreuse;}
+.color-54 {background-color: LawnGreen;}
+.color-55 {background-color: Lime;}
+.color-56 {background-color: LimeGreen;}
+.color-57 {background-color: ForestGreen;}
+.color-58 {background-color: Green;}
+.color-59 {background-color: DarkGreen;}
+.color-60 {background-color: SeaGreen;}
+.color-61 {background-color: MediumSeaGreen;}
+.color-62 {background-color: SpringGreen;}
+.color-63 {background-color: MediumSpringGreen;}
+.color-64 {background-color: LightGreen;}
+.color-65 {background-color: PaleGreen;}
+.color-66 {background-color: DarkSeaGreen;}
+.color-67 {background-color: MediumAquamarine;}
+.color-68 {background-color: LightSeaGreen;}
+.color-69 {background-color: DarkCyan;}
+.color-70 {background-color: Teal;}
 /* BLUE */
-.color-71 {background-color: Cyan}
-.color-72 {background-color: LightCyan}
-.color-73 {background-color: PaleTurquoise}
-.color-74 {background-color: Aquamarine}
-.color-75 {background-color: Turquoise}
-.color-76 {background-color: MediumTurquoise}
-.color-77 {background-color: DarkTurquoise}
-.color-78 {background-color: CadetBlue}
-.color-79 {background-color: SteelBlue}
-.color-80 {background-color: LightSteelBlue}
-.color-81 {background-color: LightBlue}
-.color-82 {background-color: PowderBlue}
-.color-83 {background-color: SkyBlue}
-.color-84 {background-color: LightSkyBlue}
-.color-85 {background-color: DeepSkyBlue}
-.color-86 {background-color: DodgerBlue}
-.color-87 {background-color: CornflowerBlue}
-.color-88 {background-color: RoyalBlue}
-.color-89 {background-color: Blue}
-.color-90 {background-color: MediumBlue}
-.color-91 {background-color: DarkBlue}
-.color-92 {background-color: Navy}
-.color-93 {background-color: MidnightBlue}
-.color-94 {background-color: MediumSlateBlue}
+.color-71 {background-color: Cyan;}
+.color-72 {background-color: LightCyan;}
+.color-73 {background-color: PaleTurquoise;}
+.color-74 {background-color: Aquamarine;}
+.color-75 {background-color: Turquoise;}
+.color-76 {background-color: MediumTurquoise;}
+.color-77 {background-color: DarkTurquoise;}
+.color-78 {background-color: CadetBlue;}
+.color-79 {background-color: SteelBlue;}
+.color-80 {background-color: LightSteelBlue;}
+.color-81 {background-color: LightBlue;}
+.color-82 {background-color: PowderBlue;}
+.color-83 {background-color: SkyBlue;}
+.color-84 {background-color: LightSkyBlue;}
+.color-85 {background-color: DeepSkyBlue;}
+.color-86 {background-color: DodgerBlue;}
+.color-87 {background-color: CornflowerBlue;}
+.color-88 {background-color: RoyalBlue;}
+.color-89 {background-color: Blue;}
+.color-90 {background-color: MediumBlue;}
+.color-91 {background-color: DarkBlue;}
+.color-92 {background-color: Navy;}
+.color-93 {background-color: MidnightBlue;}
+.color-94 {background-color: MediumSlateBlue;}
 /* PURPLE */
-.color-95 {background-color: SlateBlue}
-.color-96 {background-color: DarkSlateBlue}
-.color-97 {background-color: Indigo}
-.color-98 {background-color: Purple}
-.color-99 {background-color: DarkMagenta}
-.color-100 {background-color: DarkOrchid}
-.color-101 {background-color: DarkViolet}
-.color-102 {background-color: BlueViolet}
-.color-103 {background-color: RebeccaPurple}
-.color-104 {background-color: MediumPurple}
-.color-105 {background-color: MediumOrchid}
-.color-106 {background-color: Magenta}
-.color-107 {background-color: Orchid}
-.color-108 {background-color: Violet}
-.color-109 {background-color: Plum}
-.color-110 {background-color: Thistle}
-.color-111 {background-color: Lavender}
+.color-95 {background-color: SlateBlue;}
+.color-96 {background-color: DarkSlateBlue;}
+.color-97 {background-color: Indigo;}
+.color-98 {background-color: Purple;}
+.color-99 {background-color: DarkMagenta;}
+.color-100 {background-color: DarkOrchid;}
+.color-101 {background-color: DarkViolet;}
+.color-102 {background-color: BlueViolet;}
+.color-103 {background-color: RebeccaPurple;}
+.color-104 {background-color: MediumPurple;}
+.color-105 {background-color: MediumOrchid;}
+.color-106 {background-color: Magenta;}
+.color-107 {background-color: Orchid;}
+.color-108 {background-color: Violet;}
+.color-109 {background-color: Plum;}
+.color-110 {background-color: Thistle;}
+.color-111 {background-color: Lavender;}
 /* WHITE */
-.color-112 {background-color: MistyRose}
-.color-113 {background-color: LavenderBlush}
-.color-114 {background-color: Linen}
-.color-115 {background-color: AntiqueWhite}
-.color-116 {background-color: Ivory}
-.color-117 {background-color: FloralWhite}
-.color-118 {background-color: OldLace}
-.color-119 {background-color: Beige}
-.color-120 {background-color: SeaShell}
-.color-121 {background-color: WhiteSmoke}
-.color-122 {background-color: GhostWhite}
-.color-123 {background-color: AliceBlue}
-.color-124 {background-color: Azure}
-.color-125 {background-color: MintCream}
-.color-126 {background-color: HoneyDew}
-.color-127 {background-color: Snow}
-.color-128 {background-color: White}
+.color-112 {background-color: MistyRose;}
+.color-113 {background-color: LavenderBlush;}
+.color-114 {background-color: Linen;}
+.color-115 {background-color: AntiqueWhite;}
+.color-116 {background-color: Ivory;}
+.color-117 {background-color: FloralWhite;}
+.color-118 {background-color: OldLace;}
+.color-119 {background-color: Beige;}
+.color-120 {background-color: SeaShell;}
+.color-121 {background-color: WhiteSmoke;}
+.color-122 {background-color: GhostWhite;}
+.color-123 {background-color: AliceBlue;}
+.color-124 {background-color: Azure;}
+.color-125 {background-color: MintCream;}
+.color-126 {background-color: HoneyDew;}
+.color-127 {background-color: Snow;}
+.color-128 {background-color: White;}
 /* GRIS */
-.color-129 {background-color: Gainsboro}
-.color-130 {background-color: LightGray}
-.color-131 {background-color: Silver}
-.color-132 {background-color: DarkGray}
-.color-133 {background-color: Gray}
-.color-134 {background-color: DimGray}
-.color-135 {background-color: LightSlateGray}
-.color-136 {background-color: SlateGray}
-.color-137 {background-color: DarkSlateGray}
-.color-138 {background-color: Black}
+.color-129 {background-color: Gainsboro;}
+.color-130 {background-color: LightGray;}
+.color-131 {background-color: Silver;}
+.color-132 {background-color: DarkGray;}
+.color-133 {background-color: Gray;}
+.color-134 {background-color: DimGray;}
+.color-135 {background-color: LightSlateGray;}
+.color-136 {background-color: SlateGray;}
+.color-137 {background-color: DarkSlateGray;}
+.color-138 {background-color: Black;}
 
 /* FOOTER */
 
 footer {
     margin-top: 3rem;
-    background-color: var(--footer-bckgrndcolor)}
+    background-color: var(--footer-bckgrndcolor);
+}
 
 .text-footer {
     margin: auto;
     padding: 1rem 0 1rem 0;
     font-size: 0.7rem;
     text-align: center;
-    color: var(--footer-textcolor)}
+    color: var(--footer-textcolor);
+}
+
 #contact {
     width: 100%;
     margin: auto;
     padding-top: 0.2rem;
-    text-align: center}
+    text-align: center;
+}
 
 .contactFlex {
     margin-top: -1rem;
     display: flex;
     width: 100%;
 }
+
 .contactIcons {
     display: inline-flex;
     justify-content: space-around;
     margin: auto;
     width: 20%;
-    font-size: 1.52rem  }
+    font-size: 1.52rem;
+}
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1050px) {
 
     body {
-        width: 100%}
+        width: 98%;
+    }
+
+    .intro-text2,
+    .about-txt {
+     width: 80%;
+    }
 
     .color-wheel {
-        grid-template: repeat(24, 1fr) / repeat(4, 1fr)} 
+        grid-template: repeat(24, 1fr) / repeat(4, 1fr);
+    } 
 
     .contactIcons {
-        width: 30%}
-
-    .selected-text {
-        font-size: 0.7rem;
-        font-weight: 900}
+        width: 30%;
+    }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 681px) {
+
+    body {
+        width: 98%;
+    }
+
+    .intro-text2,
+    .about-txt {
+        width: 80%;
+    }
+
+    .textblock,
+    .textblock2 {
+        display: block;
+        width: 80%;
+    }
+
+    .block,
+    .block3,
+    .block4 {
+        width: 80%;
+    }
 
     .color-wheel {
-        grid-template: repeat(38, 1fr) / repeat(2, 1fr)}
-
-    .selected-text {
-        font-size: 0.6rem;
-        font-weight: 900}
+        grid-template: repeat(38, 1fr) / repeat(2, 1fr);
+    }
 }

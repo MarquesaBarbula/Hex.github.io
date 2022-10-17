@@ -331,70 +331,64 @@
     <div class="understanding-text">
         <div class="textblock">   
             <div class="block">
-            <h5> RGB Color Codes</h5>
-            <h6>RGB gets its name from the primary colors; red, green, and blue.<br><br>
-            In traditional color theory, all other colors can be derived from combinations of these three, and it was thought that these three colors could not be formed by a mix of any other colors.
-            <br><br>
-            RGB color codes, sometimes referred to as RGBA color codes when they include an additional value for an alpha channel.
-            <br><br>
-            Values are entered in decimal digits (0, 1, 2, 3, 4, 5...) from 0 to 255:<br>
-            Black: rgb(0, 0, 0) | White: rgb(255, 255, 255)
-            <br><br>
-            The three primary colors, red, green and blue, are made by mixing the highest intensity of the desired color with the lowest intensities of the other two.<br>
-            Red: rgb(255, 0, 0) | Green: rgb(0, 255, 0) | Blue: rgb(0, 0, 255)
-            </h6>
-        </div>
+                <h5> RGB Color Codes</h5>
+                <h6>RGB gets its name from the primary colors; red, green, and blue.
+                Traditional color theory dictates that all other colors can be derived from combinations of these three.
+                <br><br>
+                The format used is rgb(A, B, C): A is how much Red, B is how much Green, and C how much Blue.
+                <br><br>
+                Values are entered in decimal digits (0, 1, 2, 3, 4, 5... etc.) from 0 which is the lowest intensity of a color, to 255 which represents the highest intensity:<br>
+                Black: rgb(0, 0, 0) | White: rgb(255, 255, 255)
+                <br><br>
+                The three primary colors, red, green and blue, are obtained by mixing the highest intensity of the desired color with the lowest intensities of the other two:<br>
+                Red: rgb(255, 0, 0) | Green: rgb(0, 255, 0) | Blue: rgb(0, 0, 255)
+                </h6>
+            </div>
 
-        <div class="block">
-            <h5>Hex Color Codes</h5>
-            <h6>Hex color codes use the same principle as RGB color codes, as they both define colors using the RGB color mode.
-            <br><br>
-            They are written in a slightly different way, values are expressed in pairs of hexadecimal digits (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F where A=11, B=12, C=13, D=14, E=16 and F=16).
-            <br><br>
-            The format used is #RRGGBB, where RR is how much Red, GG is how much Green, and BB how much Blue.
-            <br><br>
-            Hex code byte values range from 00, which is the lowest intensity of a color, to FF which represents the highest intensity.<br>
-            Black: #000000 | White: #FFFFFF
-            <br><br>
-            The three primary colors, red, green and blue, are made by mixing the highest intensity of the desired color with the lowest intensities of the other two:<br>
-            Red: #FF0000 | Green: #00FF00 | Blue: #0000FF
-            </h6>
+            <div class="block">
+                <h5>Hex Color Codes</h5>
+                <h6>Hex color codes use the same principle as RGB color codes, but are written in a different way, values are expressed in pairs of hexadecimal digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+                <br><br>
+                The format used is #RRGGBB: RR is how much Red, GG is how much Green, and BB how much Blue.
+                <br><br>
+                Hex code byte values range from 00, which is the lowest intensity of a color, to FF which represents the highest intensity:<br>
+                Black: #000000 | White: #FFFFFF
+                <br><br>
+                The three primary colors, red, green and blue, are obtained by mixing the highest intensity of the desired color with the lowest intensities of the other two:<br>
+                Red: #FF0000 | Green: #00FF00 | Blue: #0000FF
+                </h6>
             </div>
         </div>
 
         <div class="textblock2"> 
-        <div class="block3">
-            <h5>Variation of colors</h5>  
-            <h6>Sometimes, you need a lighter or darker shade of one of those colors to get the kind of color tone you're looking for.
-            <br><br>
-            Understanding the basics of Hex color code notation we can create grayscale colors very easily, since they consist of equal intensities of each color, ie. #454545 or #999999
-            <br><br>
-            Generally speaking, the higher the numbers, the lighter the color, and the lower the numbers, the darker the color:
-            </h6>
-        </div>
-        
-        <div class="block3">
-            <h5>Create lighter colors</h5>
-            <h6>If you would like the make the color lighter, while keeping the same shade of the color you have: adjust the values that are not being used, so for example, adjust green and blue if your color is red, or adjust only red if your color is cyan. The values will need to be higher numbers in order to lighten the color.
-            <br><br>
-            Note: If you are changing two values, the values will need to be adjusted evenly in order to make sure you keepthe same color tone. That means if you increase or decrease one of the values by 100, you will need to also increase or decrease the other value by 100, regardless of if these numbers had the same starting value.
-            </h6>
-        </div>
-        
-        <div class="block3">
-            <h5>Create darker colors</h5>   
-            <h6>If you would like the make the color darker, while keeping the same shade of the color you have: adjust only the values that are being used, so for example, adjust only red if your color is red, or adjust green and blue if your color is cyan. The values will need to be lower numbers in order to darken the color.
-            <br><br>
-            Note: If you are changing two values, the values will need to be adjusted evenly in order to make sure you keepthe same color tone. That means if you increase or decrease one of the values by 100, you will need to also increase or decrease the other value by 100, regardless of if these numbers had the same starting value.
-            </h6>
-        </div>
+            <div class="block3">
+                <h5>Variation of colors</h5>  
+                <h6>To create grayscale colors use equal intensities of each color, ie. #454545 or #999999
+                <br><br>
+                Generally speaking, the higher the numbers, the lighter the color, and the lower the numbers, the darker the color.
+                </h6>
+            </div>
+            
+            <div class="block3">
+                <h5>Create lighter colors</h5>
+                <h6>If you would like the make the color lighter: adjust the values that are not being used.
+                <br><br>
+                If you are changing two values, they will need to be adjusted evenly to make sure to keep the same color tone.
+                </h6>
+            </div>
+            
+            <div class="block3">
+                <h5>Create darker colors</h5>   
+                <h6>If you would like the make the color darker: adjust only the values that are being used.
+                <br><br>
+                Remember to adjust the values evenly, to make sure you keep the same color tone.
+                </h6>
+            </div>
         </div>
     </div>
 
     <div class="block4">
-        <h6>If you would like to learn how to convert from Hex to RGB and viceversa, check out <a href="https://www.developintelligence.com/blog/2017/02/rgb-to-hex-understanding-the-major-web-color-codes/" target="_blank"> this post from developinteligence.com: "RGB to Hex: Understanding the Major Web Color Codes",</a>
-        <br>
-        other interesting pages about this subject are: <a href="https://htmlcolorcodes.com/" target="_blank">this color picker, from htmlcolorcodes.com,</a> or <a href="https://www.mathsisfun.com/hexadecimal-decimal-colors.html" target="_blank">this very mathematical one, from mathisfun.com </a>, all from where I've gathered a lot of this information. 
+        <h6>If you would like to learn how to convert from Hex to RGB and viceversa, check out <a href="https://www.developintelligence.com/blog/2017/02/rgb-to-hex-understanding-the-major-web-color-codes/" target="_blank"> this post from developinteligence.com: "RGB to Hex: Understanding the Major Web Color Codes",</a> other interesting pages about this subject are: <a href="https://htmlcolorcodes.com/" target="_blank">this color picker, from htmlcolorcodes.com,</a> or <a href="https://www.mathsisfun.com/hexadecimal-decimal-colors.html" target="_blank">this very mathematical one, from mathisfun.com </a>, all from where I've gathered a lot of this information. 
         </h6>
     </div>
 </div>
@@ -406,7 +400,7 @@
 
     <h3>COLOR TESTER</h3>
     
-    <h5>Experiment with different values, try the colors from the table above<br>or come up with your own combination</h5>
+    <h5>Experiment with different values, try the colors from the table above or come up with your own combination.</h5>
 
     <div id="colortester-sample"></div>
     <div>
