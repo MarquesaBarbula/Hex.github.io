@@ -10,19 +10,19 @@
     
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>    
-<div class="intro-text">
-    <h1>hex colors</h1>
-    <h4>- complete with W3C color names and RGB values -</h4>
-    <h2>A visual guide of RGB and hexadecimal colors</h2>
+    <div class="intro-text">
+        <h1>hex colors</h1>
+        <h4>- complete with W3C color names and RGB values -</h4>
+        <h2>A visual guide of RGB and hexadecimal colors</h2>
 
-    <div class="intro-text2">
-        <h5>Hex color codes are three byte hexadecimal number, with each byte, or pair of characters in the Hex code, representing the intensity of red, green and blue, respectively.</h5>
+        <div class="intro-text2">
+            <h5>Hex color codes are three byte hexadecimal number, with each byte, or pair of characters in the Hex code, representing the intensity of red, green and blue, respectively.</h5>
+        </div>
     </div>
-</div>
-
 
 <!-- COLOR SWATCHES --> 
 
@@ -322,7 +322,6 @@
     </div>
 </div>
 
-
 <!-- RGB VS HEX - understanding the values -->
 
 <div class="chapter">
@@ -344,7 +343,6 @@
                 Red: rgb(255, 0, 0) | Green: rgb(0, 255, 0) | Blue: rgb(0, 0, 255)
                 </h6>
             </div>
-
             <div class="block">
                 <h5>Hex Color Codes</h5>
                 <h6>Hex color codes use the same principle as RGB color codes, but are written in a different way, values are expressed in pairs of hexadecimal digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
@@ -393,62 +391,243 @@
     </div>
 </div>
 
-
-<!-- COLOR TESTER -->
+<!-- HEX COLOR TESTER -->
 
 <div class="chapter">
-
     <h3>COLOR TESTER</h3>
     
     <h5>Try the colors from the table above or experiment with different values.</h5>
 
     <div id="colortester-sample"></div>
     <div>
-        <label for="input-color">Enter a hex or a rgb(r,b,g) color value:</label>
+        <label for="input-color" class="input-color-bis">Type a name or hex color:</label>
         <input type="text" id="input-color">
     </div>
 
 </div>
 
 
-<!-- CUSTOM COLOR TESTER PALETTE --> 
+
+
+<!--  HEX COLOR TESTER 2  -->
+
+<div class="chapter">
+
+    <h3>COLOR TESTER 2</h3>
+    <h5>Try the colors from the table above or experiment with different values.</h5>
+        
+    <div class="colorito color-hex"></div>
+
+    <form id="hex-form">
+        <label for="red1-slider" class="text-form">Red</label>
+        <input id="red1-slider" type="range" name="red1-slider" autocomplete="off" min="0" max="255" value="100" oninput="this.nextElementSibling.value = this.value">
+        <input id="red1-number" type="number" name="red1-number" autocomplete="off" min="0" max="255" value="100" oninput="this.nextElementSibling.value = this.value">
+    </form>
+
+    <form id="hex-form">
+        <label for="green1-slider" class="text-form">Green</label>
+        <input id="green1-slider" type="range" name="green1-slider" autocomplete="off" min="0" max="255" value="220" oninput="this.nextElementSibling.value = this.value">
+        <input id="green1-number" type="number" name="green1-number" autocomplete="off" min="0" max="255" value="220" oninput="this.nextElementSibling.value = this.value">
+    </form>
+
+    <form id="hex-form">
+        <label for="blue1-slider" class="text-form">Blue</label>
+        <input id="blue1-slider" type="range" name="blue1-slider" autocomplete="off" min="0" max="255" value="30" oninput="this.nextElementSibling.value = this.value">
+        <input id="blue1-number" type="number" name="blue1-number" autocomplete="off" min="0" max="255" value="30" oninput="this.nextElementSibling.value = this.value">
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 
+    
+    
+    CUSTOM COLOR PALETTE
+
+
+--> 
  
-<!-- <div id="custom-palette"  class="chapter">
+<div id="custom-palette"  class="chapter">
     <div class="colores">
 
         <h3>CUSTOM COLOR PALETTE</h3>
         
         <div class="colorgroup">
 
-<form id="hex-form">
-    <div class="custom"> -->
+            <form id="hsla-form">
+                <div class="custom">
 
-<!-- INPUT FORM CUSTOM COLOR 1 -->  
-        <!-- <div class="custom-color">
-            <div class="custom-colorito color-cust1"></div>
-                                    
-            <div class="custom-controls">
-                <div class="hue-1">
-                    <label for="hue1" class="text-form">H</label>
-                    <input id="hue1" name="hue1-slider" autocomplete="off" type="range" min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
-                    <input id="hue1-number" class="input-number" autocomplete="off" type="number" name="hue1-number"  min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
-                </div> -->
-                                    
-                <!-- <div class="green-1">
+                    <!-- INPUT FORM CUSTOM COLOR 1 --> 
+                    <div class="custom-color">
+
+                        <div class="custom-colorito color-cust1"></div>
+
+<div class="custom-controls">
+                        <div class="hue-1">
+                            <label for="hue1" class="text-form">R</label>
+                            <input id="hue1" name="hue1" autocomplete="off" type="range" min="0" max="255" value="30" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue1-number" class="input-number" autocomplete="off" type="number" name="hue1-number"  min="0" max="255" value="30" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+                        
+                        <div class="sat-1">
+                            <label for="sat1" class="text-form">G</label>
+                            <input id="sat1" name="sat1" autocomplete="off" type="range" min="0" max="255" value="100" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat1-number" name="sat1-number" autocomplete="off" type="number" min="0" max="255" value="100" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="lig-1">
+                            <label for="lig1" class="text-form">B</label>
+                            <input id="lig1" name="lig1" autocomplete="off" type="range" min="0" max="255" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig1-number" name="lig1-number" autocomplete="off" type="number" min="0" max="255" value="50" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+</div>
+                    </div>
+
+                    <!-- INPUT FORM CUSTOM COLOR 2 --> 
+                    <div class="custom-color">
+
+                        <div class="custom-colorito color-cust2"></div>
+
+<div class="custom-controls">
+                        <div class="hue-2">
+                            <label for="hue2" class="text-form">R</label>
+                            <input id="hue2" name="hue2" autocomplete="off" type="range" min="0" max="255" value="178" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue2-number" class="input-number" type="number" name="hue2-number" autocomplete="off" min="0" max="255" value="178" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+                        
+                        <div class="sat-2">
+                            <label for="sat2" class="text-form">G</label>
+                            <input id="sat2" name="sat2" autocomplete="off" type="range" min="0" max="255" value="65" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat2-number" name="sat2-number" autocomplete="off" type="number" min="0" max="255" value="65" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="lig-2">
+                            <label for="lig2" class="text-form">B</label>
+                            <input id="lig2" name="lig2" autocomplete="off" type="range" min="0" max="255" value="46" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig2-number" name="lig2-number" autocomplete="off" type="number" min="0" max="255" value="46" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+</div>
+                    </div>
+
+                    <!-- INPUT FORM CUSTOM COLOR 3 --> 
+                    <div class="custom-color">
+
+                        <div class="custom-colorito color-cust3"></div>
+
+<div class="custom-controls">
+                        <div class="hue-3">
+                            <label for="hue3" class="text-form">R</label>
+                            <input id="hue3" name="hue3" autocomplete="off" type="range" min="0" max="255" value="270" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue3-number" autocomplete="off" class="input-number" type="number" name="hue3-number" min="0" max="255" value="270" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+                        
+                        <div class="sat-3">
+                            <label for="sat3" class="text-form">G</label>
+                            <input id="sat3" name="sat3" autocomplete="off" type="range" min="0" max="255" value="36" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat3-number" name="sat3-number" autocomplete="off" type="number" min="0" max="255" value="36" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="lig-3">
+                            <label for="lig3" class="text-form">B</label>
+                            <input id="lig3" name="lig3" autocomplete="off" type="range" min="0" max="255" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig3-number" name="lig3-number" autocomplete="off" type="number" min="0" max="255" value="50" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+</div>
+                    </div>
+
+                    <!-- INPUT FORM CUSTOM COLOR 4 --> 
+                    <div class="custom-color">
+
+                        <div class="custom-colorito color-cust4"></div>
+
+<div class="custom-controls">
+                        <div class="hue-4">
+                            <label for="hue4" class="text-form">R</label>
+                            <input id="hue4" name="hue4" autocomplete="off" type="range" min="0" max="359" value="330" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue4-number" name="hue4-number" autocomplete="off" class="input-number" type="number" name="hue4-number"  min="0" max="359" value="330" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+                        
+                        <div class="sat-4">
+                            <label for="sat4" class="text-form">G</label>
+                            <input id="sat4" name="sat4" autocomplete="off" type="range" min="0" max="100" value="70" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat4-number" name="sat4-number" autocomplete="off" type="number" min="0" max="100" value="70" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="lig-4">
+                            <label for="lig4" class="text-form">B</label>
+                            <input id="lig4" name="lig4" autocomplete="off" type="range" min="0" max="100" value="69" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig4-number" name="lig4-number" autocomplete="off" type="number" min="0" max="100" value="69" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+</div>
+                    </div>
+
+                    <!-- INPUT FORM CUSTOM COLOR 5 --> 
+                    <div class="custom-color">
+
+                        <div class="custom-colorito color-cust5"></div>
+
+<div class="custom-controls">
+                        <div class="hue-5">
+                            <label for="hue5" class="text-form">R</label>
+                            <input id="hue5" name="hue5" autocomplete="off" type="range" min="0" max="359" value="80" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue5-number" name="hue5-number" autocomplete="off" class="input-number" type="number" name="hue5-number"  min="0" max="359" value="80" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+                        
+                        <div class="sat-5">
+                            <label for="sat5" class="text-form">G</label>
+                            <input id="sat5" name="sat5" autocomplete="off" type="range" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat5-number" name="sat5-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+                        <div class="lig-5">
+                            <label for="lig5" class="text-form">B</label>
+                            <input id="lig5" name="lig5" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig5-number" name="lig5-number" autocomplete="off" type="number" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                        </div>
+
+</div>
+                    </div>
+
+            <!-- INPUT FORM CUSTOM COLOR 6 --> 
+            <div class="custom-color">
+
+                <div class="custom-colorito color-cust6"></div>
+
+<div class="custom-controls">
+                <div class="hue-6">
+                    <label for="hue6" class="text-form">R</label>
+                    <input id="hue6" name="hue-6" autocomplete="off" type="range" min="0" max="359" value="60" oninput="this.nextElementSibling.value = this.value">
+                    <input id="hue6-number" name="hue6-number" autocomplete="off" class="input-number" type="number" name="hue6-number"  min="0" max="359" value="60" oninput="this.nextElementSibling.value = this.value">
+                </div>
+                
+                <div class="sat-6">
+                    <label for="sat6" class="text-form">G</label>
+                    <input id="sat6" name="sat6" autocomplete="off" type="range" min="0" max="100" value="77" oninput="this.nextElementSibling.value = this.value">
+                    <input id="sat6-number" name="sat6-number" autocomplete="off" type="number" min="0" max="100" value="77" oninput="this.nextElementSibling.value = this.value">
                 </div>
 
-                <div class="blue-1">
-                </div> -->
-            <!-- </div>
-        </div> -->
-
-<!-- aqui controles para más colores -->
-            
-    <!-- </div>
-</form>   
+                <div class="lig-6">
+                    <label for="lig6" class="text-form">B</label>
+                    <input id="lig6" name="lig6" autocomplete="off" type="range" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
+                    <input id="lig6-number" name="lig6-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
+                </div>
+</div>
+            </div>
+                </div>
+            </form>   
         </div>
     </div>
-</div> -->
+</div>
 
 
 <!-- FOOTERT -->
@@ -464,13 +643,12 @@
             </div>
         </div>
     </section>
-    <p class="text-footer">hex color tool 1.1</p>
+    <p class="text-footer">hex color tool 1.5</p>
 </footer>
-
-</body>
 
 <script type="text/javascript" src="./script.js"></script>
 
 <script src="https://kit.fontawesome.com/b9e15d49f6.js" crossorigin="anonymous"></script>
 
+</body>
 </html>
