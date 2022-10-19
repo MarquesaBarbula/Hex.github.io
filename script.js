@@ -159,11 +159,11 @@ const numSat1 = document.getElementById("sat1-number");
 const rootSat1 = document.documentElement;
 
 sliderSat1.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_1", e.target.value + "%");
+    root.style.setProperty("--try_s_1", e.target.value);
 });
 
 numSat1.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_1", e.target.value + "%");
+    root.style.setProperty("--try_s_1", e.target.value);
 });
 
 // --connect slider and number field
@@ -188,11 +188,11 @@ const numlig1 = document.getElementById("lig1-number");
 const rootlig1 = document.documentElement;
 
 sliderlig1.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_1", e.target.value + "%");
+    root.style.setProperty("--try_l_1", e.target.value);
 });
 
 numlig1.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_1", e.target.value + "%");
+    root.style.setProperty("--try_l_1", e.target.value);
 });
 
 // --connect slider and number field
@@ -249,11 +249,11 @@ const numsat2 = document.getElementById("sat2-number");
 const rootsat2 = document.documentElement;
 
 slidersat2.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_2", e.target.value + "%");
+    root.style.setProperty("--try_s_2", e.target.value);
 });
 
 numsat2.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_2", e.target.value + "%");
+    root.style.setProperty("--try_s_2", e.target.value);
 });
 
 // --connect slider and number field
@@ -279,11 +279,11 @@ const numlig2 = document.getElementById("lig2-number");
 const rootlig2 = document.documentElement;
 
 sliderlig2.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_2", e.target.value + "%");
+    root.style.setProperty("--try_l_2", e.target.value);
 });
 
 numlig2.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_2", e.target.value + "%");
+    root.style.setProperty("--try_l_2", e.target.value);
 });
 
 // --connect slider and number field
@@ -341,11 +341,11 @@ const numsat3 = document.getElementById("sat3-number");
 const rootsat3 = document.documentElement;
 
 slidersat3.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_3", e.target.value + "%");
+    root.style.setProperty("--try_s_3", e.target.value);
 });
 
 numsat3.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_3", e.target.value + "%");
+    root.style.setProperty("--try_s_3", e.target.value);
 });
 
 // --connect slider and number field
@@ -371,11 +371,11 @@ const numlig3 = document.getElementById("lig3-number");
 const rootlig3 = document.documentElement;
 
 sliderlig3.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_3", e.target.value + "%");
+    root.style.setProperty("--try_l_3", e.target.value);
 });
 
 numlig3.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_3", e.target.value + "%");
+    root.style.setProperty("--try_l_3", e.target.value);
 });
 
 // --connect slider and number field
@@ -434,11 +434,11 @@ const numsat4 = document.getElementById("sat4-number");
 const rootsat4 = document.documentElement;
 
 slidersat4.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_4", e.target.value + "%");
+    root.style.setProperty("--try_s_4", e.target.value);
 });
 
 numsat4.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_4", e.target.value + "%");
+    root.style.setProperty("--try_s_4", e.target.value);
 });
 
 // --connect slider and number field
@@ -464,11 +464,11 @@ const numlig4 = document.getElementById("lig4-number");
 const rootlig4 = document.documentElement;
 
 sliderlig4.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_4", e.target.value + "%");
+    root.style.setProperty("--try_l_4", e.target.value);
 });
 
 numlig4.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_4", e.target.value + "%");
+    root.style.setProperty("--try_l_4", e.target.value);
 });
 
 // --connect slider and number field
@@ -527,11 +527,11 @@ const numsat5 = document.getElementById("sat5-number");
 const rootsat5 = document.documentElement;
 
 slidersat5.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_5", e.target.value + "%");
+    root.style.setProperty("--try_s_5", e.target.value);
 });
 
 numsat5.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_5", e.target.value + "%");
+    root.style.setProperty("--try_s_5", e.target.value);
 });
 
 // --connect slider and number field
@@ -557,11 +557,11 @@ const numlig5 = document.getElementById("lig5-number");
 const rootlig5 = document.documentElement;
 
 sliderlig5.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_5", e.target.value + "%");
+    root.style.setProperty("--try_l_5", e.target.value);
 });
 
 numlig5.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_5", e.target.value + "%");
+    root.style.setProperty("--try_l_5", e.target.value);
 });
 
 // --connect slider and number field
@@ -619,11 +619,11 @@ const numsat6 = document.getElementById("sat6-number");
 const rootsat6 = document.documentElement;
 
 slidersat6.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_6", e.target.value + "%");
+    root.style.setProperty("--try_s_6", e.target.value);
 });
 
 numsat6.addEventListener("input", (e) => {
-    root.style.setProperty("--try_s_6", e.target.value + "%");
+    root.style.setProperty("--try_s_6", e.target.value);
 });
 
 // --connect slider and number field
@@ -649,11 +649,11 @@ const numlig6 = document.getElementById("lig6-number");
 const rootlig6 = document.documentElement;
 
 sliderlig6.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_6", e.target.value + "%");
+    root.style.setProperty("--try_l_6", e.target.value);
 });
 
 numlig6.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_6", e.target.value + "%");
+    root.style.setProperty("--try_l_6", e.target.value);
 });
 
 // --connect slider and number field

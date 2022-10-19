@@ -31,34 +31,28 @@ html {
 --try_this_blue1:30;
 /* custom color 1 */
 --try_h_1: 30;
---try_s_1: 100%;
---try_l_1: 50%;
---try_a_1: 100%;
+--try_s_1: 100;
+--try_l_1: 50;
 /* custom color 2 */
 --try_h_2: 178;
---try_s_2: 65%;
---try_l_2: 46%;
---try_a_2: 100%;
+--try_s_2: 65;
+--try_l_2: 46;
 /* custom color 3 */
---try_h_3: 270;
---try_s_3: 36%;
---try_l_3: 50%;
---try_a_3: 100%;
+--try_h_3: 170;
+--try_s_3: 36;
+--try_l_3: 50;
 /* custom color 4 */
---try_h_4: 330;
---try_s_4: 70%;
---try_l_4: 69%;
---try_a_4: 100%;
+--try_h_4: 250;
+--try_s_4: 70;
+--try_l_4: 69;
 /* custom color 5 */
 --try_h_5: 80;
---try_s_5: 60%;
---try_l_5: 50%;
---try_a_5: 100%;
+--try_s_5: 60;
+--try_l_5: 50;
 /* custom color 6 */
 --try_h_6: 60;
---try_s_6: 77%;
---try_l_6: 60%;
---try_a_6: 100%;
+--try_s_6: 77;
+--try_l_6: 60;
 }
 
 
@@ -373,17 +367,17 @@ input {
 /* CUSTOM COLOR PRIMER GRUPO */
 
 .color-cust1 {
-    background-color: hsla(var(--try_h_1), var(--try_s_1), var(--try_l_1), var(--try_a_1));}
+    background-color: rgb(var(--try_h_1), var(--try_s_1), var(--try_l_1));}
 .color-cust2 {
-    background-color: hsla(var(--try_h_2), var(--try_s_2), var(--try_l_2), var(--try_a_2));}
+    background-color: rgb(var(--try_h_2), var(--try_s_2), var(--try_l_2));}
 .color-cust3 {
-    background-color: hsla(var(--try_h_3), var(--try_s_3), var(--try_l_3), var(--try_a_3));}
+    background-color: rgb(var(--try_h_3), var(--try_s_3), var(--try_l_3));}
 .color-cust4 {
-    background-color: hsla(var(--try_h_4), var(--try_s_4), var(--try_l_4), var(--try_a_4));}
+    background-color: rgb(var(--try_h_4), var(--try_s_4), var(--try_l_4));}
 .color-cust5 {
-    background-color: hsla(var(--try_h_5), var(--try_s_5), var(--try_l_5), var(--try_a_5));}
+    background-color: rgb(var(--try_h_5), var(--try_s_5), var(--try_l_5));}
 .color-cust6 {
-    background-color: hsla(var(--try_h_6), var(--try_s_6), var(--try_l_6), var(--try_a_6));}
+    background-color: rgb(var(--try_h_6), var(--try_s_6), var(--try_l_6));}
 
 
 
