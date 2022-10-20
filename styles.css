@@ -174,7 +174,7 @@ a:focus {
     
 .color-w p {
     margin: auto;
-    padding: 10%;
+    padding: 10% 5%;
 }
        
 .color-18 p, .color-17 p, .color-15 p,
@@ -189,7 +189,7 @@ a:focus {
 }
 
 .selected-text {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 900;
 }
 
