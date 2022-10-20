@@ -132,6 +132,11 @@ a:focus {
     color:var(--icon-hovercolor);
 }
 
+.link_to_hsla {
+    margin-top:2rem;
+}
+
+
 .intro-text {
     margin-top: 8rem;
 }
